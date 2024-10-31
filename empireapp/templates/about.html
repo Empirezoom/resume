@@ -1,0 +1,43 @@
+
+{% load static %} 
+
+<section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+	<div class="container">
+		<div class="row d-flex">
+			<div class="col-md-6 col-lg-5 d-flex"> 
+				<div class="img-about img d-flex align-items-stretch">
+					<div class="overlay"></div>
+					<div class="img d-flex align-self-stretch align-items-center" style="background-image:url({{info.a_logo.url}});">
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+				<div class="row justify-content-start pb-3">
+			  <div class="col-md-12 heading-section ftco-animate">
+				  <h1 class="big">About</h1>
+				<h2 class="mb-4">About Me</h2>
+				<p>{{info.about_me}}</p>
+				<ul class="about-info mt-4 px-md-0 px-2">
+					<li class="d-flex"><span>Name:</span> <span>{{info.sur_name|upper}} {{info.last_name|upper}}</span></li>
+					<li class="d-flex"><span>Date of birth:</span> <span> {{info.date_of_birth|date:"F j"}}th</span></li>
+					<li class="d-flex"><span>Address:</span> <span>{{info.address|title}}</span></li>
+					<li class="d-flex"><span>Zip code:</span> <span>{{info.zip_num}}</span></li>
+					<li class="d-flex"><span>Email:</span> <span>{{info.email|title}}</span></li>
+					<li class="d-flex"><span>Phone: </span> <span>+234-81-3536-2561</span></li>
+					<li class="d-flex"><span>whatsapp: </span> <span>+234-81-7305-7810</span></li>
+				</ul>
+			  </div>
+			</div>
+		  <div class="counter-wrap ftco-animate d-flex mt-md-3">
+		  <div class="text">
+			  <p class="mb-4">
+				<span class="number" data-number="120">0</span>
+				<span>Project complete</span>
+			</p>
+			<p><a href="{{info.cv.url}}" class="btn btn-primary py-3 px-3" download="">Download CV</a></p>
+		  </div>
+		  </div>
+		</div>
+	</div>
+	</div>
+</section>
