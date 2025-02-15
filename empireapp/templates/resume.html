@@ -1,0 +1,70 @@
+
+{% load static %} 
+
+<section class="ftco-section ftco-no-pb" id="resume-section">
+	<div class="container">
+		<div class="row justify-content-center pb-5">
+	  <div class="col-md-10 heading-section text-center ftco-animate">
+		  <h1 class="big big-2">Resume</h1>
+		<h2 class="mb-4">Resume</h2>
+		<p> Welcome to <b>{{c_profile.c_name}}</b> where we share information related to web developement. We're dedicated to providing you the very best website / web app to Showcase credibility and professionalism A meticulously designed and well-curated,Increases brand awareness,Enhances customer engagement ,Enables data collection and analysis</p>
+	  </div>
+	</div>
+		<div class="row">
+			<div class="col-md-6 resume-wrap ftco-animate">
+				<!-- <div class="resume-wrap ftco-animate"> -->
+
+					<span class="date">{{cert1.duration}}</span>
+					<h2>{{cert1.degree}}</h2>
+					<span class="position">{{cert1.school}}</span>
+					<p class="mt-4">{{cert1.address}}</p>
+					
+				<!-- </div> -->
+			
+				
+				<!-- <div class="resume-wrap ftco-animate">
+					<span class="date">2018-2024</span>
+					<h2>Bachelor's Degree of Technology in Mathematics</h2>
+					<span class="position">Olusegun Agagun University Of Science And Technology</span>
+					<p class="mt-4">Km 6, Okitipupa-Igbokoda Road, Ondo  State, Nigeria.</p>
+				</div> -->
+			
+				
+			
+			</div>
+
+			<div class="col-md-6">
+				<div class="resume-wrap ftco-animate">
+					<span class="date">{{cert2.duration}}</span>
+					<h2>{{cert2.degree}}</h2>
+					<span class="position">{{cert2.school}}</span>
+					<p class="mt-4"> {{cert2.address}}</p>
+				</div>
+				<div class="resume-wrap ftco-animate">
+					<span class="date">{{cert3.duration}}</span>
+					<h2>{{cert3.degree}}</h2>
+					<span class="position">{{cert3.school}}</span>
+					
+					<p class="mt-4"> {{cert3.address}}</p>
+				</div>
+			
+
+				<!-- <div class="resume-wrap ftco-animate">
+					<span class="date">2020-2021</span>
+					<h2>Certification Of Competence</h2>
+					<span class="position">AnchorSoft Academy</span>
+					<p class="mt-4">Deep-dive computer institute</p>
+					<p class="mt-4"> 2B Yinusa Adeniji street, opposite St. James church, Unity road, Off Toyin street, Ikeja, Lagos,</p>
+				</div> -->
+
+
+				
+			</div>
+		</div>
+		<div class="row justify-content-center mt-5">
+			<div class="col-md-6 text-center ftco-animate">
+				<p><a href="{{info.cv.url}}" class="btn btn-primary py-4 px-5" download="">Download CV</a></p>
+			</div>
+		</div>
+	</div>
+</section>

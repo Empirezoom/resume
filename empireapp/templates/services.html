@@ -1,0 +1,39 @@
+
+{% load static %} 
+
+
+<section class="ftco-section" id="services-section">
+	<div class="container">
+		<div class="row justify-content-center py-5 mt-5">
+	  <div class="col-md-12 heading-section text-center ftco-animate">
+		  <h1 class="big big-2">Services</h1>
+		<h2 class="mb-4">Services</h2>
+		<p>In addition to my technical skills, I am a strong team player and have excellent communication skills.I enjoy collaborating with my colleagues and thrive in a fast-paced and dynamic work environment.</p>
+	  </div>
+	</div>
+		<div class="row">
+			
+			{% if category %}
+				
+				{% for item in category %}
+				
+				<div class="col-md-4 text-center d-flex ftco-animate">
+					<a href="#" class="services-1">
+						<span class="icon">
+							<i class="{{item.icon}}"></i>
+						</span>
+						<div class="desc">
+							<h3 class="mb-5">{{item.type}}</h3>
+						</div>
+					</a>
+				</div>
+					
+				{% endfor %}
+					
+			{% endif %}
+				
+
+				
+			</div>
+	</div>
+</section>
